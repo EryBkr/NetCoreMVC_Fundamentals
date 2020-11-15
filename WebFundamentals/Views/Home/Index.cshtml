@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<WebFundamentals.Models.MusteriViewModel> 
 @{
     Layout = null;
 }
@@ -12,7 +12,17 @@
 </head>
 <body>
     <p>
-        Home/Index
+        Viewbag.Isim=<span>@ViewBag.Isim</span>
     </p>
+    <p>
+        Tempdata["Isim"]=<span>@TempData["Isim"]</span>
+    </p>
+    <p>
+        Viewdata["Isim"]=<span>@ViewData["Isim"]</span>
+    </p>
+    @foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+    }
 </body>
 </html>

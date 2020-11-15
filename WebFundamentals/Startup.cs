@@ -27,6 +27,8 @@ namespace WebFundamentals
                 app.UseDeveloperExceptionPage();
             }
 
+           
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
