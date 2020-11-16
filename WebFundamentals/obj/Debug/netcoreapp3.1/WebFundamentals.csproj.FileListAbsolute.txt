@@ -102,3 +102,4 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundament
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.RazorTargetAssemblyInfo.cs
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.Views.pdb
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

@@ -1,16 +1,9 @@
 ﻿@model IEnumerable<WebFundamentals.Models.MusteriViewModel> 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml"; //Layout sayfasını tanımladık
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
     <p>
         Viewbag.Isim=<span>@ViewBag.Isim</span>
     </p>
@@ -24,5 +17,3 @@
     {
         <p>@item.Name</p>
     }
-</body>
-</html>

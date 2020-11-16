@@ -21,5 +21,10 @@ namespace WebFundamentals.Controllers
                 new MusteriViewModel{Id=2,Name="Berkay"}
             });
         }
+
+        public IActionResult Sonuc()
+        {
+            return View();
+        }
     }
 }
