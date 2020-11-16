@@ -3,6 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml"; //Layout sayfasını tanımladık
 }
 
+@Html.Partial("_CategoryPartialView") @*Her sayfada model göndermemiz pek sağlıklı değil*@
 
     <p>
         Viewbag.Isim=<span>@ViewBag.Isim</span>
