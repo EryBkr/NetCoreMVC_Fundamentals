@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebFundamentals.Middlewares;
 
 namespace WebFundamentals
 {
@@ -29,6 +30,8 @@ namespace WebFundamentals
 
 
             app.UseStaticFiles();//wwwroot klasörünü eriþilebilir hale getirdik
+
+            //app.UseCustomStaticFile(); Extension Metot kullanarak UseStaticFiles ya da benzeri iþlemleri gerçekleþtirebiliyoruz
 
             app.UseRouting();
 
