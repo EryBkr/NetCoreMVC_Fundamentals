@@ -16,6 +16,8 @@
     <p>
         Viewdata["Isim"]=<span>@ViewData["Isim"]</span>
     </p>
+
+@await Component.InvokeAsync("Urunler") @*Viewcomponentimizi çağırdık*@
     
     <a asp-area="AreaName" asp-action="ActionName" asp-controller="ControllerName" asp-route-id="Route value"></a> @*Örnek Tag Helper Kullanımı*@
 

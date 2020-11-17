@@ -104,3 +104,4 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundament
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.pdb
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.genruntimeconfig.cache
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Urunler\Default.cshtml.g.cs
