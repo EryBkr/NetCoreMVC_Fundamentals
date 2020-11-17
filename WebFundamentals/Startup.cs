@@ -27,7 +27,8 @@ namespace WebFundamentals
                 app.UseDeveloperExceptionPage();
             }
 
-           
+
+            app.UseStaticFiles();//wwwroot klasörünü eriþilebilir hale getirdik
 
             app.UseRouting();
 
