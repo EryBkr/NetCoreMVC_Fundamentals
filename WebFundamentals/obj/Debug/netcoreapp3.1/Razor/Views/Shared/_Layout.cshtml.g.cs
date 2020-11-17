@@ -12,7 +12,15 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\Views\_ViewImports.cshtml"
+using WebFundamentals.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"04bc8bc50550e04d0992ad88bf0dc086076f053f", @"/Views/Shared/_Layout.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a49b228a29b2f4f917289f0412fcc5d11cce1843", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -41,7 +49,7 @@ namespace AspNetCore
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04bc8bc50550e04d0992ad88bf0dc086076f053f2757", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04bc8bc50550e04d0992ad88bf0dc086076f053f3140", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
 #nullable restore
 #line 6 "C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\Views\Shared\_Layout.cshtml"
@@ -63,7 +71,7 @@ namespace AspNetCore
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04bc8bc50550e04d0992ad88bf0dc086076f053f4065", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04bc8bc50550e04d0992ad88bf0dc086076f053f4448", async() => {
                 WriteLiteral("\r\n    <h2>Sabit İçerik</h2>\r\n    <div>\r\n        ");
 #nullable restore
 #line 11 "C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\Views\Shared\_Layout.cshtml"
