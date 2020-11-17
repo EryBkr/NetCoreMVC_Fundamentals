@@ -7,8 +7,10 @@ using WebFundamentals.Models;
 
 namespace WebFundamentals.Controllers
 {
+    [Route("kisiler/[action]")] //Startup Route tarafını ezer.
     public class HomeController : Controller
     {
+      [Route("Anasayfa")]
         public IActionResult Index()
         {
             ViewBag.Isim = "Eray";//ViewData ile ViewBag aynıdır,aynı adresi tutarlar ve bulundukları action'a özeldir

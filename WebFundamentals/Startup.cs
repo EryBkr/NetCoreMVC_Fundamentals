@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebFundamentals.Middlewares;
+using Microsoft.AspNetCore.Routing.Constraints; //Route Constraint iþlemleri için ekledik
 
 namespace WebFundamentals
 {
@@ -35,12 +36,20 @@ namespace WebFundamentals
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints => //Kapsayýcý Route aþaðýda olmalý
             {
+               endpoints.MapControllerRoute(
+               name: "person",
+               pattern: "persons",
+               defaults: new { controller = "Home", action = "Index" }
+               );
+
                 endpoints.MapControllerRoute(
-                    name:"default",
-                    pattern:"{controller=Home}/{action=Index}"//URL pattern oluþturuldu-->Default deðerleri verilmiþtir.
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}",//URL pattern oluþturuldu-->Default deðerleri verilmiþtir.Route Value yani Id parametresi nullable olarak eklendi
+                    constraints: new { id = new IntRouteConstraint() } //ID deðerimiz integer deðer olmak zorunda
                 );
+
             });
         }
     }
