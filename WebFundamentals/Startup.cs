@@ -38,7 +38,12 @@ namespace WebFundamentals
 
             app.UseEndpoints(endpoints => //Kapsayýcý Route aþaðýda olmalý
             {
-               endpoints.MapControllerRoute(
+                endpoints.MapControllerRoute(
+              name: "areas",
+              pattern: "{area}/{controller=Home}/{action=Index}/{id?}" //Area yapýsý için genel bir endpoint oluþturduk
+              );
+
+                endpoints.MapControllerRoute(
                name: "person",
                pattern: "persons",
                defaults: new { controller = "Home", action = "Index" }
