@@ -28,5 +28,16 @@ namespace WebFundamentals.Controllers
         {
             return View();
         }
+
+        public IActionResult KayitOl()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult KayitOl(UserRegisterModel userRegisterModel)
+        {
+            return View();
+        }
     }
 }
