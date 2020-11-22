@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebFundamentals.CustomFilters;
 using WebFundamentals.Models;
 
 namespace WebFundamentals.Controllers
@@ -34,6 +35,7 @@ namespace WebFundamentals.Controllers
             return View();
         }
 
+        [ValidationControl]//Yazdığımız Attribute yi burada kullanıyoruz
         [HttpPost]
         public IActionResult KayitOl(UserRegisterModel userRegisterModel)
         {
