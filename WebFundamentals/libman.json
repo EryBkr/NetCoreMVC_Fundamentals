@@ -15,7 +15,17 @@
     {
       "library": "jquery@3.5.1", //Jqueryi yükledik,yükleneceði klasörü seçtik ve dosyalarý belirledik
       "destination": "wwwroot/jquery",
-      "files": ["jquery.min.js","jquery.min.map"]
+      "files": [ "jquery.min.js", "jquery.min.map" ]
+    },
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/jqueryValidate",
+      "files": [ "jquery.validate.min.js" ]
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/jqueryUnop",
+      "files": ["jquery.validate.unobtrusive.min.js"]
     }
   ]
 }

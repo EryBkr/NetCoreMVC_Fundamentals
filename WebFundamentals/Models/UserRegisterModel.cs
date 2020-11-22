@@ -10,7 +10,7 @@ namespace WebFundamentals.Models
     {
         [Required] //Data Annotations yardımıyla modellerimize validasyon ekleyebiliriz Requried Zorunlu alan özelliği kazandırır
         public string Ad { get; set; }
-        [Required(ErrorMessage ="Soyadı gereklidir")]
+        [Required(ErrorMessage ="Soyadı gereklidir")] //Hata mesajını kendimiz belirledik
         public string Soyad { get; set; }
     }
 }

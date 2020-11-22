@@ -10,14 +10,20 @@
     <meta name="viewport" content="width=device-width" />
     <title>KayitOl</title>
     <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .input-validation-error{
+            border:1px solid red; /*Validasyon classını kullanarak düzenleme yaptık*/
+        }
+    </style>
 </head>
 <body>
     <form class="w-50 mx-auto mt-5 shadow" method="post" asp-action="KayitOl">
 
-        <input type="text" class="form-control" name="Ad" value="" />
+        <input type="text" asp-for="Ad" class="form-control" name="Ad" value="" /> @*asp-for tag helper sayesinde ClientSide Valid. Kütüphanelerimiz çalışır hale gelecektir*@
         <span asp-validation-for="Ad" class="text-danger"></span> @* O property'e ait hatayı burada gösterebiliriz *@
 
-        <input type="text" class="form-control" name="Soyad" value="" />
+        <input type="text" asp-for="Soyad" class="form-control" name="Soyad" value="" />
 
         <button type="submit">Kayıt Ol</button>
 
@@ -26,6 +32,9 @@
         <div asp-validation-summary="All" class="text-success"></div> @*Bütün uyarılar gözüktü*@
     </form>
 
-
+    @*Bu kutuphaneler Client Side Validation için kullanılıyor*@
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/jqueryValidate/jquery.validate.min.js"></script>
+    <script src="~/jqueryUnop/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>
