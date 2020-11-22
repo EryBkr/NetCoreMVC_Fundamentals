@@ -37,7 +37,13 @@ namespace WebFundamentals.Controllers
         [HttpPost]
         public IActionResult KayitOl(UserRegisterModel userRegisterModel)
         {
-            return View();
+            if (ModelState.IsValid) //Validasyon kontrollerimizi yapıyoruz
+            {
+
+            }
+            ModelState.AddModelError(nameof(UserRegisterModel.Ad), "Ad Alanı Gereklidir"); //Ekstra özellik eklersek bu şekilde de belirtebiliriz.
+            ModelState.AddModelError("","Model ile ilgili hatalar");
+            return View(userRegisterModel);
         }
     }
 }

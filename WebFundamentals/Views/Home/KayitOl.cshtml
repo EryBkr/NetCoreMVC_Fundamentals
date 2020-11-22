@@ -1,4 +1,4 @@
-﻿
+﻿@model UserRegisterModel
 @{
     Layout = null;
 }
@@ -12,9 +12,18 @@
     <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <form class="w-50 mx-auto mt-5 shadow"  method="post" asp-action="KayitOl">
-    <input type="text" class="form-control" name="name" value="" />
-    <button type="submit">Kayıt Ol</button>
+    <form class="w-50 mx-auto mt-5 shadow" method="post" asp-action="KayitOl">
+
+        <input type="text" class="form-control" name="Ad" value="" />
+        <span asp-validation-for="Ad" class="text-danger"></span> @* O property'e ait hatayı burada gösterebiliriz *@
+
+        <input type="text" class="form-control" name="Soyad" value="" />
+
+        <button type="submit">Kayıt Ol</button>
+
+        <div asp-validation-summary="ModelOnly" class="text-info"></div> @*İşaretlenmemiş boş key değerine sahip alanlar gözüktü (Model ile ilgili)*@
+        <hr />
+        <div asp-validation-summary="All" class="text-success"></div> @*Bütün uyarılar gözüktü*@
     </form>
 
 
