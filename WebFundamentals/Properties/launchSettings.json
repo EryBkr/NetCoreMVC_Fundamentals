@@ -12,7 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production" //Global hata sayfasına gidebilmek için Development kısmını Production olarak değiştirdik
       }
     },
     "WebFundamentals": {

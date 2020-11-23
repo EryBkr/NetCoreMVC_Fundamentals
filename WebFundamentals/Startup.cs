@@ -26,9 +26,14 @@ namespace WebFundamentals
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");//Global hata sayfamýz
+            }
 
             //app.UseStatusCodePages(); Microsoft a ait error page kullanýmý
-            app.UseStatusCodePagesWithReExecute("/Home/PageError","?code={0}"); //Hangi sayfaya gideceðini belirledik
+           // app.UseStatusCodePagesWithReExecute("/Home/PageError","?code={0}"); //Hangi sayfaya gideceðini belirledik
+           
 
             app.UseRouting();
 

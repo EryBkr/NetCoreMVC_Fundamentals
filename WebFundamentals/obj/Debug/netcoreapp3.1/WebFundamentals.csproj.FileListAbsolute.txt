@@ -103,3 +103,4 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundament
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.Views.pdb
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\WebFundamentals.csprojAssemblyReference.cache
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\Razor\Views\Home\PageError.cshtml.g.cs
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreMVC\WebFundamentals\WebFundamentals\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error.cshtml.g.cs
