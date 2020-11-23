@@ -19,6 +19,7 @@ namespace WebFundamentals
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();//MVC Projeye Dahil Oldu
+            services.AddSession();//Session kýsmýný ekledik
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +36,8 @@ namespace WebFundamentals
             //app.UseCustomStaticFile(); Extension Metot kullanarak UseStaticFiles ya da benzeri iþlemleri gerçekleþtirebiliyoruz
 
             app.UseRouting();
+
+            app.UseSession();//Session ý kullanmak için tanýmladýk
 
             app.UseEndpoints(endpoints => //Kapsayýcý Route aþaðýda olmalý
             {

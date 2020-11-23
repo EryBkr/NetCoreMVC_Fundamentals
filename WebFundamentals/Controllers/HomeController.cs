@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebFundamentals.CustomFilters;
 using WebFundamentals.Models;
@@ -21,6 +22,10 @@ namespace WebFundamentals.Controllers
             //Cookie ataması ve erişimini çağırdık
             SetCookie();
             ViewBag.Cookie = GetCookie();
+
+            //Session ataması ve erişimini çağırdık
+            SetSession();
+            ViewBag.SessionValue = GetSession();
 
             return View(new List<MusteriViewModel>() //View'e liste gönderiyorum
             {
@@ -66,6 +71,16 @@ namespace WebFundamentals.Controllers
         public string GetCookie()
         {
             return HttpContext.Request.Cookies["kisi"]; //Cookie değerimizi aldık
+        }
+
+        public void SetSession()
+        {
+            HttpContext.Session.SetString("kisiSession", "erays");
+        }
+
+        public string GetSession()
+        {
+            return HttpContext.Session.GetString("kisiSession");
         }
     }
 }

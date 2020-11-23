@@ -1,32 +1,36 @@
-﻿@model IEnumerable<WebFundamentals.Models.MusteriViewModel> 
+﻿@model IEnumerable<WebFundamentals.Models.MusteriViewModel>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml"; //Layout sayfasını tanımladık
 }
 
 @Html.Partial("_CategoryPartialView") @*Her sayfada model göndermemiz pek sağlıklı değil bunun yerine ViewComponent kullanılabilir *@
 
-<partial name="_CategoryPartialView"/> @*Başka bir kullanıma örnek*@
+<partial name="_CategoryPartialView" /> @*Başka bir kullanıma örnek*@
 
-    <p>
-        Viewbag.Isim=<span>@ViewBag.Isim</span>
-    </p>
-    <p>
-        Tempdata["Isim"]=<span>@TempData["Isim"]</span>
-    </p>
-    <p>
-        Viewdata["Isim"]=<span>@ViewData["Isim"]</span>
-    </p>
-    <p>
-        <span>Cookie Değeri</span> <span>@ViewBag.Cookie</span>
-    </p>
+<p>
+    Viewbag.Isim=<span>@ViewBag.Isim</span>
+</p>
+<p>
+    Tempdata["Isim"]=<span>@TempData["Isim"]</span>
+</p>
+<p>
+    Viewdata["Isim"]=<span>@ViewData["Isim"]</span>
+</p>
+<p>
+    <span>Cookie Değeri</span> <span>@ViewBag.Cookie</span>
+</p>
+
+<p>
+    <span>Session Değeri</span> <span>@ViewBag.SessionValue</span>
+</p>
 
 @await Component.InvokeAsync("Urunler") @*Viewcomponentimizi çağırdık*@
-    
-    <a asp-area="AreaName" asp-action="ActionName" asp-controller="ControllerName" asp-route-id="Route value"></a> @*Örnek Tag Helper Kullanımı*@
 
-    <eray get-data="Viewden gönderilen data"></eray> @*Custom Tag Helper*@
+<a asp-area="AreaName" asp-action="ActionName" asp-controller="ControllerName" asp-route-id="Route value"></a> @*Örnek Tag Helper Kullanımı*@
 
-    @foreach (var item in Model)
-    {
-        <p>@item.Name</p>
-    }
+<eray get-data="Viewden gönderilen data"></eray> @*Custom Tag Helper*@
+
+@foreach (var item in Model)
+{
+    <p>@item.Name</p>
+}
