@@ -18,6 +18,10 @@ namespace WebFundamentals.Controllers
             TempData["Isim"] = "Eray";//Actionlar arası bilgi taşımak için kullanılır
             ViewData["Isim"] = "Eray";
 
+            //Cookie ataması ve erişimini çağırdık
+            SetCookie();
+            ViewBag.Cookie = GetCookie();
+
             return View(new List<MusteriViewModel>() //View'e liste gönderiyorum
             {
                 new MusteriViewModel{Id=1,Name="Eray"},
@@ -46,6 +50,22 @@ namespace WebFundamentals.Controllers
             ModelState.AddModelError(nameof(UserRegisterModel.Ad), "Ad Alanı Gereklidir"); //Ekstra özellik eklersek bu şekilde de belirtebiliriz.
             ModelState.AddModelError("","Model ile ilgili hatalar");
             return View(userRegisterModel);
+        }
+
+        public void SetCookie()
+        {
+            HttpContext.Response.Cookies.Append("kisi", "eray", new Microsoft.AspNetCore.Http.CookieOptions()
+            {
+                Expires = DateTime.Now.AddDays(20), //20 gün hayatta kalsın
+                HttpOnly = true,//XSS karşı koruma sağlar
+                SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict,//Web sayfaları erişimi
+                Secure = true //Https ile çalışır
+            });
+        }
+
+        public string GetCookie()
+        {
+            return HttpContext.Request.Cookies["kisi"]; //Cookie değerimizi aldık
         }
     }
 }
