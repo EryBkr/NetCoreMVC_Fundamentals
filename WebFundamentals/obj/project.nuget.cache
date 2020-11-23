@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1CBiA4WZxPAgikH50rHu402Q6d8uGGMp91xttOK7Xlcwi5UqGr+4USKrPyo3+Jnm6vb0GmlhsN/KfUUBkBg+6w==",
+  "dgSpecHash": "lF4lI5zyZZSgziaB6DxRQyUaRizHmFXM3paOFpb8+9pebC402Q9fq1pq2wCUQIEpQO1UkKzOQiBu4FxENhBHXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Blackerback\\OneDrive\\Masaüstü\\NetCoreMVC\\WebFundamentals\\WebFundamentals\\WebFundamentals.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,9 @@
     "C:\\Users\\Blackerback\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Blackerback\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Blackerback\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Blackerback\\.nuget\\packages\\nlog\\4.7.5\\nlog.4.7.5.nupkg.sha512",
+    "C:\\Users\\Blackerback\\.nuget\\packages\\nlog.config\\4.7.5\\nlog.config.4.7.5.nupkg.sha512",
+    "C:\\Users\\Blackerback\\.nuget\\packages\\nlog.schema\\4.7.5\\nlog.schema.4.7.5.nupkg.sha512",
     "C:\\Users\\Blackerback\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Blackerback\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Blackerback\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using WebFundamentals.CustomLogger;
 
 namespace WebFundamentals.Controllers
 {
@@ -28,6 +29,16 @@ namespace WebFundamentals.Controllers
         {
             var exceptionHandlerPathFeature =
           HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+
+            //LOG işlemleri
+            var logger = new NLogLogger();
+            logger.
+                LogWithNLog($"hatanın oluştuğu yer" +
+                $" {exceptionHandlerPathFeature.Path}" +
+                $" \n " +
+                $"hata mesajı:{exceptionHandlerPathFeature.Error.Message} \n " +
+                $"stack trace:{exceptionHandlerPathFeature.Error.StackTrace}");
+
             ViewBag.Path = exceptionHandlerPathFeature.Path;
             ViewBag.Message = exceptionHandlerPathFeature.Error.Message;
 
