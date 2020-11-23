@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebFundamentals.CustomExtension;
 using WebFundamentals.CustomFilters;
 using WebFundamentals.Models;
 
@@ -75,12 +76,12 @@ namespace WebFundamentals.Controllers
 
         public void SetSession()
         {
-            HttpContext.Session.SetString("kisiSession", "erays");
+            HttpContext.Session.SetObject("kisiSession", new MusteriViewModel { Id = 1, Name = "Eray" }); //Obje ve key ataması yaptık
         }
 
-        public string GetSession()
+        public MusteriViewModel GetSession()
         {
-            return HttpContext.Session.GetString("kisiSession");
+            return HttpContext.Session.GetObject<MusteriViewModel>("kisiSession"); //Beklediğimiz tipte datayı aldık
         }
     }
 }
